@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Constructor</title>
+    </head>
+    <body>
+        <script>
+            //this  => ponting to the current object
+            function Person(name ,age,weight) {
+                this.name = name ;
+                this.age = age;
+                this.weight= weight;
+                
+            }
+            let obj = new Person("Pravin",23,63);
+            console.log(obj)
+            console.log(obj.name="Abhay");
+            console.log(obj);
+        </script>
+    </body>
+</html>

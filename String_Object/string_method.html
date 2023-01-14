@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Method</title>
+</head>
+<body>
+    <script>
+        //String method
+        //slice which is used to  spliting the  string into the framents
+        var str = "Java Script";
+        //         012345678910
+        console.log(str.slice(0,4)); // => Java never consider last number like here is 4
+
+        var str1  = "Java Script" ;
+        console.log(str1.slice(-4)); //=>ript
+
+        //length which is used to indentify the length of declred the  string
+        console.log(str1.length); //=>11
+
+        // charAt=>which is used to  fetch perticular string element with the help of  index value
+        console.log(str1.charAt(3)); //=>a
+
+        //indexOf which us used to indentify the index of perticular  letter
+       console.log(str1.indexOf("S")); //=>5
+
+       //tolowercase => the convert the string into  the lowercase
+       console.log(str1.toLowerCase()); //=>java script
+
+       //toUppercae => to converts ths string into the uppercase
+       console.log(str1.toUpperCase()); //=>JAVA SCRIPT
+        //repalce 
+        //console.log(str1.replace())
+        
+        //concat
+        var str2 = "Java";
+        var str3 = "Script";
+        console.log(str2.concat(str3));  //=>JavaScript
+
+        //repeat which is used  to repeat the string
+        var  str4 = "Mumbai To  Goa"
+        console.log(str4.repeat(5)); // 5 times print 
+        //replace
+        console.log(str4.replace("Mumbai","Pune")); //=>Pune to Goa
+
+        //endswith here we can check endwith character by passing value
+        console.log(str4.endsWith("a"));  //=>true
+        
+        //startwith
+        console.log(str4.startsWith("M")); //=>true
+        
+        //sustring => same as a slice() method 
+        //substring which is used to splitting the string inta fragments
+        console.log(str4.substring(0,4)); //mumb
+    </script>
+</body>
+</html>

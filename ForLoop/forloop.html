@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Loop</title>
+</head>
+<body>
+    <script>
+        // for in loop
+        var arr  = ["sachin ","Rohit","Abhay","Yogesh"]
+        for (const arr1 in arr) {
+            console.log(arr1);
+            }
+
+
+        //for of loop
+        for (const arr2 of arr) {
+            console.log(arr2);
+            
+        }
+        // for  each loop
+
+       var  arr3 = arr .forEach((index,value) => {
+        console.log(index,value);
+       });
+    </script>
+</body>
+</html>

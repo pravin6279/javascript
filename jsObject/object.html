@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java script Object</title>
+    </head>
+    <body>
+        <script>
+            //bt using literals
+            var obj = {
+                brand :  "Natraj",
+                color : "Black",
+                weight : "125 gram"
+            }
+            console.log(obj); //  in javascript object are mutuable
+            console.log(obj.color);
+            obj.brand = "Camelin";
+            console.log(obj)
+            
+            //passing multiple object
+            var  arr = [{name:"Yogesh Patil",prof:"Bathroom singer",age:23},
+            {name:{name:"Ranjeet",type:"Nested Object "},prof:"street singer",age:23},
+            {name:"Ashutosh Mulik",prof:"Bar Singer",age:23},
+            {name:" Pravin Gaikwad",prof:" singer",age:23},
+            {name:"Saurabh Sutar",prof:"Award Wninning  singer",age:23},
+            {name:"Swapnil Mohite",prof:"street singer",age:23}]
+            console.log(arr);
+            console.log(arr[0].name="Ajay");
+            console.log(arr[0]);
+            console.log(arr[1]);
+
+        </script>
+    </body>
+</html>

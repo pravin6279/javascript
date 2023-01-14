@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            height: 200px;
+            width: 200px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" onsubmit="submit()">
+        <form>
+            <label>first name :</label>
+            <input type="text" placeholder="firstname "><br><br>
+            <label>last name : </label>
+            <input  type="text" placeholder="lastname "><br><br>
+            <button type="button">Submit</button>
+        </form>
+    </div>
+    <script>
+        var element = document.getElementsByTagName("button");
+        function submit() {
+            element.style.backgroundColor= "blue";
+            
+        }
+    </script>
+</body>
+</html>

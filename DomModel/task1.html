@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent{
+            height: 300px;
+            width: 300px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent" onmouseover="change()"></div>
+    <script>
+        var color = document.getElementById("parent").style.backgroundColor="blue"
+        var color1 = document.getElementById("parent")  
+        
+        function change() {
+            if (color=="red") {
+                color1.style.backgroundColor="yellow"
+                
+            }
+            else  if (color=="blue"){
+                color1.style.backgroundColor = "pink"
+                color1.style.borderRadius ="50%"
+                
+
+            }
+            else  if (color=="pink"){
+                color1.style.backgroundColor = "green"
+                
+
+            }
+            else{
+                color1.backgroundColor = "brown"
+            }
+            
+        }
+    </script>
+</body>
+</html>

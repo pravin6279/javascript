@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>function</title>
+    </head>
+    <body>
+        <button onclick="demo()">Button</button>
+        <script>
+            //function declartion
+            console.log("Start");
+            function demo() {
+          console.log("this is function declration");
+                
+            }
+            console.log(demo());
+
+
+            //function expression
+            console.log("Start")
+            var  fun  = function demo() 
+            {
+                console.log("This is Function Expression");
+             }
+             console.log(fun());
+
+
+             var a ;
+             var b;
+             var fun  = function demo(a,b) {
+                 console.log(a+b)
+              }
+             console.log(fun(10,20));
+
+
+            //annoymous function =function does not  have any name 
+              var anno = function() {
+                 console.log("annoymous function");
+                
+              }
+              anno();
+
+
+            //Arrow Function -here is no function declration
+             var arrow = ()=>{
+                console.log("Arrow function");
+            }
+            console.log(arrow());
+             
+            //iife -  prevent  variable polution- immediate invoking function expression
+            (function () {
+            console.log("IIFE");
+                
+            })();
+            (function (a,b) {
+                console.log("Result :"+ a*b)
+                console.log(typeof a)
+                
+            })(10,8);
+                
+            
+        </script>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Model Using GETID</title>
+</head>
+<body>
+    <h1 class="h"></h1>
+    <h1 class="h"></h1>
+    <h1 class="h"></h1>
+    <h2 id="h1"></h2>
+    <script>
+        //  here we are using Class Name
+        var element = document.getElementsByClassName("h");
+        element[1].innerHTML = "This is heading";
+        element[1].style.color ="red";
+        element[0].innerHTML = "My name is Pravin ";
+        element[0].style.background = "Yellow";
+
+        //here we are using id name pass over 
+        document.getElementById("h1").innerHTML = "Here we are using Id"  ;
+
+    </script>
+</body>
+</html>
